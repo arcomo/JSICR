@@ -37,43 +37,55 @@
 
 
 \begin{abstract}
-Election is based on trust. Trust.
-
-
-
-Election is an essential tool in democracy, and with the advancement of information technology nowadays, all aspects of election quality have also been greatly enhanced. Nevertheless, the quality from the trust aspect is still a distant goal especially in the developing world where the bond of trust between each stakeholder of the society is not as strong as in a developed country. Thus, it is also vital to understand the election from various aspects with the aim to improve it. This paper proposes a tool to understand the risk on an election result by approaching from a risk model of election result handling and simulating the model using a multi-agent simulation.
+Election is based on trust. Voters used to trust election and election trust based on their trust on society they live on. Trust in developed society has different aspect with trust in developing society. How developed society like Japan trust it's election will be measured and compared to developing society like Indonesia. By using survey and simulation based on multi-agent simulation, this paper try to measure perception of voter's trust.
 \end{abstract}
 
 \begin{keyword}
-Election Result Risk, Multi-Agent Simulation, Trustworthiness
+Election Result Trustfulness
 \end{keyword}
 
 \maketitle
 
 %1
 \section{Introduction}
-Trust is an essential requirement of an election which is one of the tool in a democracy.
+Trust is an essential requirement of an election which is one of the tool in a democracy. A trustful election is a must ingredient for a functioning democracy, and vice versa \cite{Manan2010}. Society with a flawed and rigged election had not been considered a democracy no matter hard it's government tried to claim it.
+
+Autocracy
+
+Blind trust 
+
+perception
+
+
+
+
+
+
 
 Election is one of essential tools in a democracy. There cannot be a functioning democracy without a functioning election, and vice versa. In social science, election has been researched extensively \cite{Manan2010}.
 
 One thing to be sure is democracy cannot survive without a free and fair election. To hold a free and fair election, transparency and accountability are the keys especially in verifying all aspects of the election. Election is a very laborious process with participation of many entities that have different interests, thus sometimes makes election process a long time. The progress will take longer if problems like a dispute arise, especially if the problems involve some entities who are election stakeholders. Therefore, lately information technology (IT) is used to reduce and minimize the risk in an election. Furthermore, in some cases, utilizing a full end-to-end election process using IT. Nevertheless, the use of IT also has its own risks as described in \cite{Neumann1995}.
 
-The election process is a cumbersome and complicated process that usually involves each citizen of a country, it starts from the ratification of the election law that is agreed upon virtually by all stakeholders, and ends with the declaration of the election result with the endorsement of legitimate candidates. There is no all-in-one solution to handle it as the process is also different in each country, some countries also change the election law for each election. \Figref{fig:ecomplex} shows the complexity of the election process in Indonesia's 2009 election as a process that involved around 519.920 poll stations around the country with 172 million people, with a logistic movement from the Central Election Commission in the top to each poll station in the bottom and back to the top after Election Day with a total cost to reach around US\$850 milion.
+The election process is a cumbersome and complicated process that usually involves each citizen of a country, it starts from the ratification of the election law that is agreed upon virtually by all stakeholders, and ends with the declaration of the election result with the endorsement of legitimate candidates. There is no all-in-one solution to handle it as the process is also different in each country, some countries also change the election law for each election. %\Figref{fig:ecomplex} 
+shows the complexity of the election process in Indonesia's 2009 election as a process that involved around 519.920 poll stations around the country with 172 million people, with a logistic movement from the Central Election Commission in the top to each poll station in the bottom and back to the top after Election Day with a total cost to reach around US\$850 milion.
 
 Our approach is to focus on one of the main risks in an election, which is the handling of the election result starting from the end of the election day to submit votes until the declaration of the final result. We developed a model of election result risk to better understand how the process and the interaction between each stakeholder after election day can influence the trustability of the election and in particular the trustability of each poll station. Our model then was put on a multi-agent simulation to simulate the election in Indonesia in 2009 and show the comparability of the result with what happened in the election in 2009.
 
 In the model, each stakeholder's parameter can be adjusted to reflect the society in which the election is going on. Thus, with the model we can predict how the election will proceed in terms of trustworthiness and will help in understanding risk in the election process. The model can also be used to predict the usability of a proposal for a change or a proposal for an added tool in an election.
 
-\begin{figure}[tb]%1
-\setbox0\vbox{\it
-  \hbox{\includegraphics[scale=0.4]{images/ElectionComplexity.eps}}}
-\centerline{\fbox{\box0}}
-\caption{Election Process}
-\label{fig:ecomplex}
-\end{figure}
+%\begin{figure}[tb]%1
+%\setbox0\vbox{\it
+%  \hbox{\includegraphics[scale=0.4]{images/ElectionComplexity.eps}}}
+%\centerline{\fbox{\box0}}
+%\caption{Election Process}
+%\label{fig:ecomplex}
+%\end{figure}
+
+
+%%% Bab 2 %%%
 
 %2
-\section{Background}
+\section{Literacy Survey}
 
 Here we will discuss about why we need to create a risk model of election result handling.
 
@@ -276,7 +288,8 @@ For \textit{bc}, we put \textit{op}'s \textit{bc} to 3 because we believed they 
 
 \begin{figure}[tb]%1
 \setbox0\vbox{\it
-  \hbox{\includegraphics[scale=0.6]{images/graph-sampling100.eps}}}
+%  \hbox{\includegraphics[scale=0.6]{images/graph-sampling100.eps}}}
+  \hbox{\includegraphics[scale=0.6]{images/Trustworthiness3.eps}}}
 \centerline{\fbox{\box0}}
 \caption{10 sampling of 0.1\% TPS}
 \label{fig:sampling100}
@@ -284,7 +297,8 @@ For \textit{bc}, we put \textit{op}'s \textit{bc} to 3 because we believed they 
 
 \begin{figure}[tb]%1
 \setbox0\vbox{\it
-  \hbox{\includegraphics[scale=0.6]{images/graph-sampling1k.eps}}}
+%  \hbox{\includegraphics[scale=0.6]{images/graph-sampling1k.eps}}}
+  \hbox{\includegraphics[scale=0.6]{images/Trustworthiness3.eps}}}
 \centerline{\fbox{\box0}}
 \caption{10 sampling of 1\% TPS}
 \label{fig:sampling1k}
@@ -300,7 +314,8 @@ As we don't simulate all the poll station (in the order of 519,920) and instead 
 
 \begin{figure}[tb]%1
 \setbox0\vbox{\it
-  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness1.eps}}}
+%  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness1.eps}}}
+  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness3.eps}}}
 \centerline{\fbox{\box0}}
 \caption{Trustworthiness of 2009 Indonesia election}
 \label{fig:result1}
@@ -308,7 +323,8 @@ As we don't simulate all the poll station (in the order of 519,920) and instead 
 
 \begin{figure}[tb]%2
 \setbox0\vbox{\it
-  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness2.eps}}}
+%  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness2.eps}}}
+  \hbox{\includegraphics[scale=0.8]{images/Trustworthiness3.eps}}}
 \centerline{\fbox{\box0}}
 \caption{Trustworthiness of 2009 Indonesia election\\
 compare with other method}
